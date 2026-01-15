@@ -9,7 +9,6 @@ let user = "bf"; in
   ];
 
   nix = {
-    package = pkgs.nix;
 
     settings = {
       trusted-users = [ "@admin" "${user}" ];

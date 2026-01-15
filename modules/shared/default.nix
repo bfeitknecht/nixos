@@ -1,6 +1,9 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    ./lix.nix
+  ];
 
   nixpkgs = {
     config = {

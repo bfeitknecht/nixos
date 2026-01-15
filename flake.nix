@@ -27,9 +27,13 @@
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    lix-module = {
+      url = "https://git.lix.systems/lix-project/lix-module/archive/main.tar.gz";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, darwin, nix-homebrew, homebrew-bundle, homebrew-core, homebrew-cask, home-manager, nixpkgs, disko } @inputs:
+  outputs = { self, darwin, nix-homebrew, homebrew-bundle, homebrew-core, homebrew-cask, home-manager, nixpkgs, disko, lix-module } @inputs:
     let
       user = "bf";
       linuxSystems = [ "x86_64-linux" "aarch64-linux" ];
@@ -83,6 +87,7 @@
           inherit system;
           specialArgs = inputs;
           modules = [
+            lix-module.darwinModules.default
             home-manager.darwinModules.home-manager
             nix-homebrew.darwinModules.nix-homebrew
             {
@@ -107,6 +112,7 @@
         inherit system;
         specialArgs = inputs;
         modules = [
+          lix-module.nixosModules.default
           disko.nixosModules.disko
           home-manager.nixosModules.home-manager {
             home-manager = {
