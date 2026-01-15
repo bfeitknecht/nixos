@@ -28,7 +28,7 @@ _:
   "curseforge"
 
   # Design Tools
-  "ableton-suite-live"
+  "ableton-live-suite"
   "audacity"
   "autodesk-fusion"
   "prusaslicer"
