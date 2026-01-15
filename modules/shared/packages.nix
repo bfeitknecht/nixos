@@ -57,5 +57,5 @@ with pkgs; [
   typst
   sbcl
   pkl
-  surreal
+  surrealdb
 ]
