@@ -43,7 +43,6 @@ with pkgs; [
   # Development tools
   gh
   direnv
-  make
   just
   onefetch
 
