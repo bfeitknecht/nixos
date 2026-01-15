@@ -8,6 +8,7 @@ with pkgs; [
   ripgrep
   fd
   dust
+  delta
 
   # General packages
   coreutils
