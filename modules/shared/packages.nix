@@ -37,11 +37,10 @@ with pkgs; [
   nushell
   stow
   tlrc
-  thefuck
+  pay-respects
   asciiquarium
 
   # Development tools
-  licensor
   gh
   direnv
   make

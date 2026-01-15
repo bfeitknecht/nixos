@@ -37,12 +37,11 @@ let name = "Basil Feitknecht";
   git = {
     enable = true;
     ignores = [ "*.swp" ];
-    userName = name;
-    userEmail = email;
-    lfs = {
-      enable = true;
-    };
-    extraConfig = {
+    settings = {
+      user = {
+        name = name;
+        email = email;
+      };
       init.defaultBranch = "master";
       core = {
 	    editor = "nvim";
@@ -50,6 +49,9 @@ let name = "Basil Feitknecht";
       };
       pull.rebase = true;
       rebase.autoStash = true;
+    };
+    lfs = {
+      enable = true;
     };
   };
 
