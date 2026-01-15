@@ -56,6 +56,6 @@ with pkgs; [
   lua
   typst
   sbcl
-  pkl
-  surrealdb
+  # pkl
+  # surrealdb
 ]
