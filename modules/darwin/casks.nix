@@ -2,31 +2,34 @@ _:
 
 [
   # Development Tools
-  "homebrew/cask/docker"
-  "visual-studio-code"
   "iterm2"
-  "postman"
-  "cursor"
+  "itermbrowserplugin"
+  "zed"
+  "visual-studio-code"
+  "orbstack"
+  "utm"
 
   # Productivity Tools
   "raycast"
+  "stats"
+  "karabiner-elements"
+  "notunes"
+  "obsidian"
+  "kiwix"
 
-  # Browsers
-  "google-chrome"
+  # Communication Tools
+  "discord"
+  "whatsapp"
+  "element"
 
-  # Communication Tools - Examples (uncomment as needed)
-  # "discord"
-  # "notion"
-  # "slack"
-  # "telegram"
-  # "zoom"
+  # Entertainment Tools
+  "spotify"
+  "minecraft"
+  "curseforge"
 
-  # Utility Tools - Examples (uncomment as needed)
-  # "syncthing"
-  # "1password"
-  # "rectangle"
-
-  # Entertainment Tools - Examples (uncomment as needed)
-  # "spotify"
-  # "vlc"
+  # Design Tools
+  "ableton-suite-live"
+  "audacity"
+  "autodesk-fusion"
+  "prusaslicer"
 ]

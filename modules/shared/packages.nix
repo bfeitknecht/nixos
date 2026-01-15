@@ -1,66 +1,62 @@
 { pkgs }:
 
 with pkgs; [
-  # General packages for development and system management
-  alacritty
-  bash-completion
+  # Better standards
+  zoxide
+  eza
   bat
-  btop
+  ripgrep
+  fd
+  dust
+
+  # General packages
   coreutils
   killall
   openssh
-  sqlite
+  curl
   wget
   zip
+  unzip
+  fzf
 
   # Encryption and security tools
   age
   gnupg
+  tor
 
   # Cloud-related tools and SDKs
   docker
-  docker-compose
-
-  # Media-related packages
-  emacs-all-the-icons-fonts
-  dejavu_fonts
-  fd
-  font-awesome
-  hack-font
-  noto-fonts
-  noto-fonts-color-emoji
-  meslo-lgs-nf
-
-  # Node.js development tools
-  nodejs_24
 
   # Text and terminal utilities
-  htop
-  jetbrains-mono
-  jq
-  ripgrep
-  tree
-  tmux
-  unzip
-  zsh-powerlevel10k
-  
-  # Development tools
-  curl
-  gh
-  terraform
-  kubectl
-  awscli2
   lazygit
-  fzf
-  direnv
-  
-  # Programming languages and runtimes
-  go
-  rustc
-  cargo
-  openjdk
+  lazydocker
+  bottom
+  tmux
+  neovim
+  nushell
+  stow
+  tlrc
+  thefuck
+  asciiquarium
 
-  # Python packages
-  python3
-  virtualenv
+  # Development tools
+  licensor
+  gh
+  direnv
+  make
+  just
+  onefetch
+
+  # Programming languages and runtimes
+  rustup
+  go
+  zig
+  vlang
+  deno
+  uv
+  lua
+  typst
+  sbcl
+  pkl
+  surreal
 ]
