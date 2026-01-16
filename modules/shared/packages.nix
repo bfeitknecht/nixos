@@ -38,7 +38,9 @@ with pkgs; [
   stow
   tlrc
   pay-respects
-  asciiquarium
+  carapace
+  opencode
+  starship
 
   # Development tools
   gh
@@ -50,12 +52,12 @@ with pkgs; [
   rustup
   go
   zig
-  vlang
+  # vlang
   deno
   uv
   lua
   typst
-  sbcl
+  # sbcl
   # pkl
   # surrealdb
 ]

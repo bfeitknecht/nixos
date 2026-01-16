@@ -20,17 +20,6 @@ let name = "Basil Feitknecht";
       # .go/bin
       # .deno/bin
       export PATH=$HOME/.local/share/bin:$PATH
-
-      # Remove history data we don't want to see
-      export HISTIGNORE="pwd:ls:cd"
-
-      # nix shortcuts
-      shell() {
-          nix-shell '<nixpkgs>' -A "$1"
-      }
-
-      # Always color ls and group directories
-      alias ls='ls --color=auto'
     '';
   };
 

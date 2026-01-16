@@ -2,8 +2,7 @@ _:
 
 [
   # Development Tools
-  "iterm2"
-  "itermbrowserplugin"
+  "ghostty"
   "zed"
   "visual-studio-code"
   "orbstack"

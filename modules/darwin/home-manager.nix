@@ -11,7 +11,6 @@ in
    ./dock
   ];
 
-  # It me
   users.users.${user} = {
     name = "${user}";
     home = "/Users/${user}";
@@ -35,7 +34,8 @@ in
     # you may receive an error message "Redownload Unavailable with This Apple ID".
     # This message is safe to ignore. (https://github.com/dustinlyons/nixos-config/issues/83)
     masApps = {
-      # "wireguard" = 1451685025;
+      # "GarageBand" = 682658836;
+      # "iMovie" = 408981434;
     };
   };
 
@@ -65,14 +65,11 @@ in
     enable = true;
     username = user;
     entries = [
-      { path = "/Applications/Safari.app/"; }
-      { path = "/System/Applications/Messages.app/"; }
-      { path = "/System/Applications/Notes.app/"; }
-      { path = "${pkgs.alacritty}/Applications/Alacritty.app/"; }
-      { path = "/System/Applications/Music.app/"; }
-      { path = "/System/Applications/Photos.app/"; }
-      { path = "/System/Applications/Photo Booth.app/"; }
       { path = "/System/Applications/System Settings.app/"; }
+      { path = "/System/Applications/Finder.app/"; }
+      { path = "${pkgs.ghostty}/Applications/Ghostty.app/"; }
+      { path = "${pkgs.obsidian}/Applications/Obsidian.app/"; }
+      { path = "/Applications/Safari.app/"; }
       {
         path = "${config.users.users.${user}.home}/Downloads";
         section = "others";
