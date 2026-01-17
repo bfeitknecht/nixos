@@ -31,9 +31,13 @@
       url = "https://git.lix.systems/lix-project/nixos-module/archive/main.tar.gz";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    aerospace-tap = {
+      url = "github:nikitabobko/homebrew-tap";
+      flake = false;
+    };
   };
 
-  outputs = { self, darwin, nix-homebrew, homebrew-bundle, homebrew-core, homebrew-cask, home-manager, nixpkgs, disko, lix-module } @inputs:
+  outputs = { self, darwin, nix-homebrew, homebrew-bundle, homebrew-core, homebrew-cask, home-manager, nixpkgs, disko, lix-module, aerospace-tap } @inputs:
     let
       user = "bf";
       linuxSystems = [ "x86_64-linux" "aarch64-linux" ];
@@ -98,8 +102,9 @@
                   "homebrew/homebrew-core" = homebrew-core;
                   "homebrew/homebrew-cask" = homebrew-cask;
                   "homebrew/homebrew-bundle" = homebrew-bundle;
+                  "nikitabobko/homebrew-tap" = aerospace-tap;
                 };
-                mutableTaps = true; # INFO: allow casks of the form "user/repo/cask"
+                mutableTaps = false;
                 autoMigrate = true;
               };
             }

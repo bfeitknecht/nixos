@@ -15,7 +15,7 @@ _:
   "notunes" # TODO: replace this with Automater script
   "obsidian"
   "kiwix"
-  "nikitabobko/tap/aerospace"
+  "aerospace"
   # CHECK:
   # - SketchyBar
   # - JankyBorders
