@@ -99,7 +99,7 @@
                   "homebrew/homebrew-cask" = homebrew-cask;
                   "homebrew/homebrew-bundle" = homebrew-bundle;
                 };
-                mutableTaps = false;
+                mutableTaps = true; # INFO: allow casks of the form "user/repo/cask"
                 autoMigrate = true;
               };
             }
