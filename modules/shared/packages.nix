@@ -41,12 +41,14 @@ with pkgs; [
   carapace
   opencode
   starship
+  atuin
 
   # Development tools
   gh
   direnv
   just
   onefetch
+  license-generator
 
   # Programming languages and runtimes
   rustup

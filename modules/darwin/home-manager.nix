@@ -54,9 +54,9 @@ in
       };
       programs = {} // import ../shared/home-manager.nix { inherit config pkgs lib; };
 
-      # Marked broken Oct 20, 2022 check later to remove this
+      # INFO: Re-enabled on 2025-01-17, check below on issues.
       # https://github.com/nix-community/home-manager/issues/3344
-      manual.manpages.enable = false;
+      manual.manpages.enable = true;
     };
   };
 

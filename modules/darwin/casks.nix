@@ -9,12 +9,16 @@ _:
   "utm"
 
   # Productivity Tools
-  "raycast"
+  "raycast" # TODO: replace this with sketchybar
   "stats"
   "karabiner-elements"
-  "notunes"
+  "notunes" # TODO: replace this with Automater script
   "obsidian"
   "kiwix"
+  "aerospace"
+  # CHECK:
+  # - SketchyBar
+  # - JankyBorders
 
   # Communication Tools
   "discord"
