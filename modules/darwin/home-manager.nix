@@ -66,7 +66,6 @@ in
     username = user;
     entries = [
       { path = "/System/Applications/System Settings.app/"; }
-      { path = "/System/Applications/Finder.app/"; }
       { path = "/Applications/Ghostty.app/"; }
       { path = "/Applications/Obsidian.app/"; }
       { path = "/Applications/Safari.app/"; }
