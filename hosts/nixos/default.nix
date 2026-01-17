@@ -289,6 +289,7 @@ in {
     dejavu_fonts
     feather-font # from overlay
     jetbrains-mono
+    nerd-fonts.commit-mono
     font-awesome
     noto-fonts
     noto-fonts-color-emoji

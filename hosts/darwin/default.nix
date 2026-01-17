@@ -65,4 +65,8 @@ let user = "bf"; in
       };
     };
   };
+
+  fonts.packages = with pkgs; [
+    nerd-fonts.commit-mono
+  ];
 }
