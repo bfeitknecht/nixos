@@ -67,8 +67,8 @@ in
     entries = [
       { path = "/System/Applications/System Settings.app/"; }
       { path = "/System/Applications/Finder.app/"; }
-      { path = "${pkgs.ghostty}/Applications/Ghostty.app/"; }
-      { path = "${pkgs.obsidian}/Applications/Obsidian.app/"; }
+      { path = "/Applications/Ghostty.app/"; }
+      { path = "/Applications/Obsidian.app/"; }
       { path = "/Applications/Safari.app/"; }
       {
         path = "${config.users.users.${user}.home}/Downloads";
